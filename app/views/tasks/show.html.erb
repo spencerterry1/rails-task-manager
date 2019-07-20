@@ -1,0 +1,17 @@
+<div class="task-header">
+  <h1 id="task-title"><%= @task.title %></h1>
+  <button id="edit-task-button">
+    <%= link_to "Edit this task", edit_path %>
+  </button>
+</div>
+
+
+<p class="task-details"><%= @task.details %>
+
+<%= link_to "Delete", task_path(@task), method: :delete %>
+
+
+<p>
+  <%= link_to "Back to list", tasks_path %>
+</p>
+
